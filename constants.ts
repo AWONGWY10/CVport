@@ -101,7 +101,7 @@ export const APPS_DATA: AppShowcase[] = [
     iosLink: "https://apps.apple.com/sg/app/al-ikhsan-sports/id6747497015",
     androidLink: "https://play.google.com/store/apps/details?id=com.alikhsan.app_al_ikhsan",
     color: "#F15627",
-    icon: "Shoes",
+    icon: "Footprints",
     logoImageUrl: ""
   },
   {
