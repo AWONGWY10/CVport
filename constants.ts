@@ -3,15 +3,15 @@ import { ExperienceItem, SkillItem, AppShowcase, CXNode } from './types';
 export const PERSONAL_INFO = {
   name: "Wong Wai Yain",
   role: "Product Owner / Product Manager",
-  location: "Bukit Mertajam, Penang",
+  location: "Penang, Malaysia",
   phone: "019-558 7393",
   email: "wongwaiyain@hotmail.com",
-  summary: "Product Owner / Product Manager with 5+ years of hands-on experience building and scaling loyalty, and customer engagement products including mobile apps integrated with POS systems. Strong at translating business needs into clear product requirements, managing end-to-end delivery with engineering teams, and balancing client expectations with technical constraints.",
+  summary: "Product Owner / Product Manager with 5+ years of hands-on experience building and scaling products including mobile apps. Strong at translating business needs into clear product requirements, managing end-to-end delivery with engineering teams, and balancing client expectations with technical constraints. Comfortable working closely with developers, designers, operations, and clients to ship practical, revenue-impacting features in fast-moving environments.",
   achievements: [
-    "Successfully launched llaollao Club app with high user retention.",
-    "Built a no-code CX Builder from scratch.",
-    "Integrated loyalty systems with major retail POS networks.",
-    "Introduced structured PRD processes in engineering teams."
+    "Successfully launched high-retention mobile applications.",
+    "Built a no-code automation builder from scratch.",
+    "Integrated complex systems with major retail networks.",
+    "Institutionalized structured PRD and backlog grooming processes."
   ]
 };
 
@@ -22,7 +22,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     company: "Web Bytes Sdn Bhd",
     period: "Oct 2020 – Present",
     description: [
-      "Own the product lifecycle for multiple mobile loyalty applications and web platforms used by retail and F&B brands across Malaysia.",
+      "Own the product lifecycle for multiple mobile applications and web platforms used by major retail and F&B brands across Malaysia.",
       "Work closely with frontend and backend engineers to plan sprints, groom backlogs, and deliver features on schedule.",
       "Act as the key bridge between clients, business teams, and engineers, translating business goals into clear functional and technical requirements.",
       "Lead sprint ceremonies including backlog grooming, sprint planning, stand-ups, and UAT sign-off.",
@@ -73,18 +73,22 @@ export const SKILLS_DATA: SkillItem[] = [
   },
   { 
     category: "Technical & Tools", 
-    skills: ["SQL (Data Validation)", "POSTMAN", "Excel", "System Analysis"] 
+    skills: ["SQL (Data Validation & Troubleshooting)", "POSTMAN", "Excel"] 
   },
   { 
     category: "UI/UX", 
     skills: ["Figma", "Adobe XD", "Wireframing", "Prototyping"] 
+  },
+  {
+    category: "Languages",
+    skills: ["English", "Chinese", "Bahasa Malaysia"]
   }
 ];
 
 export const APPS_DATA: AppShowcase[] = [
   {
     name: "llaollao Club",
-    description: "The official loyalty app for llaollao Malaysia. Collect points, redeem frozen yogurt, and climb tiers through a gamified experience.",
+    description: "Successfully launched the official mobile application for llaollao Malaysia, driving significant user engagement and digital revenue.",
     iosLink: "https://apps.apple.com/my/app/myllaollaoclub/id1499925477",
     androidLink: "https://play.google.com/store/apps/details?id=com.webbytes.llaollao",
     color: "bg-green-500",
@@ -92,7 +96,7 @@ export const APPS_DATA: AppShowcase[] = [
   },
   {
     name: "Al-Ikhsan Sports",
-    description: "Sports retail loyalty. Integrated w/ POS for seamless earning and redemption of sports gear rewards across hundreds of outlets.",
+    description: "High-impact retail application integrated with POS for seamless omnichannel user experiences across hundreds of outlets.",
     iosLink: "https://apps.apple.com/sg/app/al-ikhsan-sports/id6747497015",
     androidLink: "https://play.google.com/store/apps/details?id=com.alikhsan.app_al_ikhsan",
     color: "bg-black",
@@ -100,7 +104,7 @@ export const APPS_DATA: AppShowcase[] = [
   },
   {
     name: "Mydin Rewards",
-    description: "Massive scale hypermarket loyalty program. Features catalogue redemptions, member achievements, and cross-brand partner vouchers.",
+    description: "Enterprise-scale loyalty and rewards platform for one of Malaysia's largest hypermarket chains.",
     iosLink: "https://apps.apple.com/my/app/mydin-rewards/id6478905253",
     androidLink: "https://play.google.com/store/apps/details?id=my.mydin.meriah",
     color: "bg-blue-600",
@@ -109,10 +113,10 @@ export const APPS_DATA: AppShowcase[] = [
 ];
 
 export const CX_NODES: CXNode[] = [
-  { id: '1', type: 'trigger', label: 'Wait Event', subLabel: 'Purchase > RM50', x: 50, y: 50 },
-  { id: '2', type: 'condition', label: 'Is Member VIP?', subLabel: 'Check Tier', x: 250, y: 50 },
-  { id: '3', type: 'action', label: 'Issue Voucher', subLabel: 'RM20 Reward', x: 450, y: 0 },
-  { id: '4', type: 'action', label: 'Issue Points', subLabel: '2x Multiplier', x: 450, y: 100 },
-  { id: '5', type: 'wait', label: 'Wait Delay', subLabel: '3 Days', x: 650, y: 0 },
-  { id: '6', type: 'action', label: 'Send Email', subLabel: 'Thank You + Survey', x: 850, y: 0 },
+  { id: '1', type: 'trigger', label: 'User Event', subLabel: 'Interaction Trigger', x: 50, y: 50 },
+  { id: '2', type: 'condition', label: 'Logic Split', subLabel: 'Requirement Check', x: 250, y: 50 },
+  { id: '3', type: 'action', label: 'Feature Delivery', subLabel: 'User Value', x: 450, y: 0 },
+  { id: '4', type: 'action', label: 'Data Record', subLabel: 'System Update', x: 450, y: 100 },
+  { id: '5', type: 'wait', label: 'Wait Delay', subLabel: 'Scheduled Task', x: 650, y: 0 },
+  { id: '6', type: 'action', label: 'Notification', subLabel: 'External Sync', x: 850, y: 0 },
 ];
