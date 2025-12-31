@@ -104,10 +104,10 @@ const CXBuilderDemo: React.FC = () => {
         <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
             <div className="max-w-2xl">
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                    Fluid <span className="gradient-text">CX Automation</span>
+                    Event-Driven <span className="gradient-text">CX Automation</span>
                 </h2>
                 <p className="text-slate-400 text-lg leading-relaxed">
-                    Built the <strong>CX Builder</strong> from the ground up—a visual orchestration engine that processes millions of customer events in real-time.
+                    Conceptualized and owned the roadmap for this <strong>Event-Driven</strong> orchestration engine. I defined the product logic, user journeys, and functional requirements to ship a platform capable of processing millions of real-time customer events.
                 </p>
             </div>
             
@@ -139,11 +139,11 @@ const CXBuilderDemo: React.FC = () => {
                         <div className="w-3 h-3 rounded-full bg-amber-500/50"></div>
                         <div className="w-3 h-3 rounded-full bg-emerald-500/50"></div>
                     </div>
-                    <span className="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] ml-2">Production Environment</span>
+                    <span className="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] ml-2">Product Strategy Sandbox</span>
                 </div>
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-xs font-bold text-white tracking-wide">Live Preview</span>
+                    <span className="text-xs font-bold text-white tracking-wide">Strategy Visualization</span>
                 </div>
             </div>
 
@@ -174,7 +174,6 @@ const CXBuilderDemo: React.FC = () => {
                         return (
                             <div 
                                 key={node.id}
-                                // Fix: ensuring ref callback returns void to avoid TypeScript error
                                 ref={el => { nodesRef.current[index] = el; }}
                                 className={getNodeStyle(node.type, isActive, isCurrent)}
                                 style={{ left: pos.x, top: pos.y }}
@@ -185,7 +184,7 @@ const CXBuilderDemo: React.FC = () => {
                                     </div>
                                     {isCurrent && (
                                         <div className="px-2 py-0.5 rounded-full bg-indigo-500 text-[8px] font-black uppercase text-white animate-pulse">
-                                            Processing
+                                            Validating
                                         </div>
                                     )}
                                 </div>
