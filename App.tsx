@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import CXBuilderDemo from './components/CXBuilderDemo';
-import AIChat from './components/AIChat';
 import LoyaltySim from './components/LoyaltySim';
 import Footer from './components/Footer';
 
@@ -21,7 +20,6 @@ function App() {
          <Portfolio />
          <LoyaltySim />
          <CXBuilderDemo />
-         <AIChat />
          <Experience />
       </div>
       <Footer />
