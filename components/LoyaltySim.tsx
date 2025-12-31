@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Star, Gift, Trophy, ArrowRight, MousePointer2, CheckCircle2, Sparkles } from 'lucide-react';
 import { SKILLS_DATA, PERSONAL_INFO } from '../constants';
@@ -23,12 +22,15 @@ const LoyaltySim: React.FC = () => {
   const allSkills = SKILLS_DATA.flatMap(cat => cat.skills);
 
   return (
-    <section className="py-24 relative overflow-hidden" id="loyalty-sim">
+    <section className="py-24 relative" id="loyalty-sim">
       <div className="container mx-auto px-6">
-        <div className="glass-card rounded-[2.5rem] border border-slate-700/50 p-10 md:p-16 overflow-hidden relative shadow-2xl">
-          {/* Decorative backgrounds */}
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-yellow-500/10 rounded-full blur-[100px]"></div>
-          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-600/10 rounded-full blur-[100px]"></div>
+        {/* Removed overflow-hidden from the main card to prevent clipping the floating hint */}
+        <div className="glass-card rounded-[2.5rem] border border-slate-700/50 p-10 md:p-16 relative shadow-2xl">
+          {/* Decorative backgrounds - contained within a separate absolute div with overflow hidden if needed */}
+          <div className="absolute inset-0 rounded-[2.5rem] overflow-hidden pointer-events-none">
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-yellow-500/10 rounded-full blur-[100px]"></div>
+            <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-600/10 rounded-full blur-[100px]"></div>
+          </div>
           
           <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -97,12 +99,12 @@ const LoyaltySim: React.FC = () => {
               )}
             </div>
 
-            <div className="relative min-h-[400px]">
+            <div className="relative min-h-[450px] flex flex-col justify-end">
               {!unlocked ? (
-                <div className="relative">
-                  {/* Floating Hand Hint for interaction */}
+                <div className="relative pt-12">
+                  {/* Floating Hand Hint for interaction - Adjusted position and z-index */}
                   {points === 0 && (
-                    <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-yellow-500 text-slate-900 px-5 py-2.5 rounded-2xl text-xs font-black shadow-[0_10px_30px_rgba(234,179,8,0.4)] flex items-center gap-2 animate-bounce z-30 ring-4 ring-yellow-500/20">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-yellow-500 text-slate-900 px-5 py-2.5 rounded-2xl text-xs font-black shadow-[0_10px_30px_rgba(234,179,8,0.4)] flex items-center gap-2 animate-bounce z-40 ring-4 ring-yellow-500/20 whitespace-nowrap">
                         <MousePointer2 size={16} fill="currentColor" /> CLICK HERE TO START!
                         <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-yellow-500 rotate-45"></div>
                     </div>
@@ -139,7 +141,7 @@ const LoyaltySim: React.FC = () => {
                   </div>
                 </div>
               ) : (
-                <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 rounded-[2.5rem] p-10 text-white shadow-2xl transform hover:scale-[1.02] transition-transform duration-500 border border-white/20 relative overflow-hidden h-full flex flex-col justify-center">
+                <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 rounded-[2.5rem] p-10 text-white shadow-2xl transform hover:scale-[1.02] transition-transform duration-500 border border-white/20 relative overflow-hidden h-full min-h-[400px] flex flex-col justify-center">
                   <div className="absolute top-0 right-0 p-8 opacity-10">
                     <Trophy size={200} />
                   </div>
