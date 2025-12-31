@@ -1,11 +1,9 @@
-
 import React from 'react';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import CXBuilderDemo from './components/CXBuilderDemo';
 import LoyaltySim from './components/LoyaltySim';
-import AIChat from './components/AIChat';
 import Footer from './components/Footer';
 
 function App() {
@@ -22,8 +20,6 @@ function App() {
          <Portfolio />
          <LoyaltySim />
          <CXBuilderDemo />
-         {/* Added AIChat component to the main flow */}
-         <AIChat />
          <Experience />
       </div>
       <Footer />
