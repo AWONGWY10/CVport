@@ -18,6 +18,7 @@ export interface AppShowcase {
   androidLink?: string;
   color: string;
   icon: string;
+  logoImageUrl?: string;
 }
 
 export interface CXNode {
