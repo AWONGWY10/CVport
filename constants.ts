@@ -116,10 +116,10 @@ export const APPS_DATA: AppShowcase[] = [
 ];
 
 export const CX_NODES: CXNode[] = [
-  { id: '1', type: 'trigger', label: 'User Event', subLabel: 'Interaction Trigger', x: 50, y: 50 },
-  { id: '2', type: 'condition', label: 'Logic Split', subLabel: 'Requirement Check', x: 250, y: 50 },
-  { id: '3', type: 'action', label: 'Feature Delivery', subLabel: 'User Value', x: 450, y: 0 },
-  { id: '4', type: 'action', label: 'Data Record', subLabel: 'System Update', x: 450, y: 100 },
-  { id: '5', type: 'wait', label: 'Wait Delay', subLabel: 'Scheduled Task', x: 650, y: 0 },
-  { id: '6', type: 'action', label: 'Notification', subLabel: 'External Sync', x: 850, y: 0 },
+  { id: '1', type: 'trigger', label: 'Store Visit', subLabel: 'POS Transaction Trigger', x: 50, y: 160 },
+  { id: '2', type: 'condition', label: 'Tier Check', subLabel: 'Is Gold Member?', x: 280, y: 160 },
+  { id: '3', type: 'action', label: 'Issue Voucher', subLabel: '10% Off llaollao', x: 520, y: 60 },
+  { id: '4', type: 'action', label: 'Double Points', subLabel: 'Loyalty Bonus', x: 520, y: 260 },
+  { id: '5', type: 'wait', label: 'Cooldown', subLabel: 'Wait 24 Hours', x: 760, y: 60 },
+  { id: '6', type: 'action', label: 'Push Notification', subLabel: 'Retention Alert', x: 1000, y: 60 },
 ];
