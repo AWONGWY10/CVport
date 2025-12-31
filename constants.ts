@@ -93,7 +93,7 @@ export const APPS_DATA: AppShowcase[] = [
     androidLink: "https://play.google.com/store/apps/details?id=com.webbytes.llaollao",
     color: "bg-white",
     icon: "ice-cream",
-    logoImageUrl: "https://i.imgur.com/iwgSUwh.jpeg?auto=format&fit=crop&q=80&w=800"
+    logoImageUrl: "https://i.imgur.com/iwgSUwh.jpeg"
   },
   {
     name: "Al-Ikhsan Sports",
