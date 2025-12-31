@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   summary: "Product Owner / Product Manager with 5+ years of hands-on experience building and scaling products including mobile apps. Strong at translating business needs into clear product requirements, managing end-to-end delivery with engineering teams, and balancing client expectations with technical constraints. Comfortable working closely with developers, designers, operations, and clients to ship practical, revenue-impacting features in fast-moving environments.",
   achievements: [
     "Successfully launched high-retention mobile applications.",
-    "Built a no-code automation builder from scratch.",
+    "Spearheaded the delivery of an Event-Driven CX automation engine from vision to launch.",
     "Integrated complex systems with major retail networks.",
     "Institutionalized structured PRD and backlog grooming processes."
   ]
@@ -93,7 +93,7 @@ export const APPS_DATA: AppShowcase[] = [
     androidLink: "https://play.google.com/store/apps/details?id=com.webbytes.llaollao",
     color: "bg-white",
     icon: "ice-cream",
-    logoImageUrl: "https://i.imgur.com/iwgSUwh.jpeg"
+    logoImageUrl: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Al-Ikhsan Sports",
