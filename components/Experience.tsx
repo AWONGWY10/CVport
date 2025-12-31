@@ -1,6 +1,6 @@
 import React from 'react';
 import { EXPERIENCE_DATA, SKILLS_DATA } from '../constants';
-import { Briefcase, Code2, Layers } from 'lucide-react';
+import { Briefcase, Layers, GraduationCap } from 'lucide-react';
 
 const Experience: React.FC = () => {
   return (
@@ -47,11 +47,11 @@ const Experience: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Column: Skills */}
+        {/* Right Column: Skills & Education */}
         <div className="lg:col-span-4 space-y-8">
             <div className="glass-card rounded-2xl p-6 sticky top-8">
                 <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                    <Layers size={20} className="text-purple-400"/> Skills & Tools
+                    <Layers size={20} className="text-purple-400"/> Skills & Design
                 </h3>
                 
                 <div className="space-y-8">
@@ -69,16 +69,27 @@ const Experience: React.FC = () => {
                     ))}
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-slate-700/50">
-                    <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Education</h3>
-                    <div className="space-y-4">
-                        <div className="p-3 rounded-xl bg-slate-800/50 border border-slate-700/30">
-                            <div className="text-white font-medium text-sm">BA (Hons) Business Admin</div>
-                            <div className="text-indigo-400 text-xs mt-0.5">University of Hertfordshire</div>
+                <div className="mt-10 pt-8 border-t border-slate-700/50">
+                    <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-6 flex items-center gap-2">
+                      < GraduationCap size={18} className="text-indigo-400" /> Education
+                    </h3>
+                    <div className="space-y-6">
+                        <div className="group">
+                            <div className="flex justify-between items-start mb-1">
+                              <div className="text-white font-bold text-sm group-hover:text-indigo-400 transition-colors">BA (Hons) Business Admin</div>
+                              <div className="text-[10px] font-black text-emerald-400 uppercase tracking-tighter bg-emerald-400/10 px-1.5 py-0.5 rounded">1st Class</div>
+                            </div>
+                            <div className="text-slate-400 text-xs">University of Hertfordshire</div>
+                            <div className="mt-2 text-[10px] text-slate-500 italic">Grade: First Class Honours (2015 – 2017)</div>
                         </div>
-                        <div className="p-3 rounded-xl bg-slate-800/50 border border-slate-700/30">
-                            <div className="text-white font-medium text-sm">Diploma in Business</div>
-                            <div className="text-indigo-400 text-xs mt-0.5">INTI International College</div>
+                        
+                        <div className="group">
+                            <div className="flex justify-between items-start mb-1">
+                              <div className="text-white font-bold text-sm group-hover:text-indigo-400 transition-colors">Diploma in Business</div>
+                              <div className="text-[10px] font-black text-emerald-400 uppercase tracking-tighter bg-emerald-400/10 px-1.5 py-0.5 rounded">3.38 CGPA</div>
+                            </div>
+                            <div className="text-slate-400 text-xs">INTI International College Penang</div>
+                            <div className="mt-2 text-[10px] text-slate-500 italic">Grade: CGPA 3.38 (2013 – 2015)</div>
                         </div>
                     </div>
                 </div>
