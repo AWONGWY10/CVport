@@ -91,27 +91,27 @@ export const APPS_DATA: AppShowcase[] = [
     description: "Successfully launched the official mobile application for llaollao Malaysia, driving significant user engagement and digital revenue.",
     iosLink: "https://apps.apple.com/my/app/myllaollaoclub/id1499925477",
     androidLink: "https://play.google.com/store/apps/details?id=com.webbytes.llaollao",
-    color: "bg-white",
-    icon: "ice-cream",
-    logoImageUrl: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&q=80&w=800"
+    color: "#8FD300",
+    icon: "IceCream",
+    logoImageUrl: ""
   },
   {
     name: "Al-Ikhsan Sports",
     description: "High-impact retail application integrated with POS for seamless omnichannel user experiences across hundreds of outlets.",
     iosLink: "https://apps.apple.com/sg/app/al-ikhsan-sports/id6747497015",
     androidLink: "https://play.google.com/store/apps/details?id=com.alikhsan.app_al_ikhsan",
-    color: "bg-slate-950",
-    icon: "activity",
-    logoImageUrl: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800"
+    color: "#F15627",
+    icon: "Shoes",
+    logoImageUrl: ""
   },
   {
     name: "Mydin Rewards",
     description: "Enterprise-scale loyalty and rewards platform for one of Malaysia's largest hypermarket chains.",
     iosLink: "https://apps.apple.com/my/app/mydin-rewards/id6478905253",
     androidLink: "https://play.google.com/store/apps/details?id=my.mydin.meriah",
-    color: "bg-blue-700",
-    icon: "shopping-cart",
-    logoImageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800"
+    color: "#1358C7",
+    icon: "ShoppingCart",
+    logoImageUrl: ""
   }
 ];
 
