@@ -107,7 +107,7 @@ const CXBuilderDemo: React.FC = () => {
                     Event-Driven <span className="gradient-text">CX Automation</span>
                 </h2>
                 <p className="text-slate-400 text-lg leading-relaxed">
-                    Conceptualized and owned the roadmap for this <strong>Event-Driven</strong> orchestration engine. I defined the product logic, user journeys, and functional requirements to ship a platform capable of processing millions of real-time customer events.
+                    Managed and owned the roadmap for this <strong>Event-Driven</strong> orchestration engine. I defined the user journeys, and functional requirements to ship a platform capable of processing millions of real-time customer events.
                 </p>
             </div>
             
