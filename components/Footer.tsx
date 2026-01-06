@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                     <a href={`mailto:${PERSONAL_INFO.email}`} className="p-3 rounded-full bg-slate-800 text-slate-400 hover:bg-white hover:text-slate-900 transition-all">
                         <Mail size={20} />
                     </a>
-                    <a href="#" className="p-3 rounded-full bg-slate-800 text-slate-400 hover:bg-white hover:text-slate-900 transition-all">
+                    <a href="https://www.linkedin.com/in/wai-yain-wong-00271b6a/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-slate-800 text-slate-400 hover:bg-white hover:text-slate-900 transition-all">
                         <Linkedin size={20} />
                     </a>
                 </div>
