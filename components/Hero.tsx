@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
               <span>Let's talk</span>
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-slate-800/40 text-white border border-slate-700/50 px-8 py-4 rounded-xl font-medium hover:bg-slate-800 transition-all hover:-translate-y-1 backdrop-blur-sm">
+            <a href="https://www.linkedin.com/in/wai-yain-wong-00271b6a/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-slate-800/40 text-white border border-slate-700/50 px-8 py-4 rounded-xl font-medium hover:bg-slate-800 transition-all hover:-translate-y-1 backdrop-blur-sm">
               <Linkedin size={18} />
               LinkedIn
             </a>
