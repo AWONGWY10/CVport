@@ -164,7 +164,6 @@ const LoyaltySim: React.FC = () => {
                             Email Me Directly <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </a>
                         <div className="flex items-center justify-center gap-3 p-4 bg-indigo-900/40 rounded-2xl border border-white/10 text-indigo-100 font-bold tracking-widest text-sm">
-                            <span className="opacity-50 text-[10px]">MOBILE:</span> {PERSONAL_INFO.phone}
                         </div>
                     </div>
                   </div>
