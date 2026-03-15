@@ -4,7 +4,6 @@ export const PERSONAL_INFO = {
   name: "Wong Wai Yain",
   role: "Product Owner / Product Manager",
   location: "Penang, Malaysia",
-  phone: "019-558 7393",
   email: "wongwaiyain@hotmail.com",
   summary: "Product Owner / Product Manager with 5+ years of hands-on experience building and scaling products including mobile apps. Strong at translating business needs into clear product requirements, managing end-to-end delivery with engineering teams, and balancing client expectations with technical constraints. Comfortable working closely with developers, designers, operations, and clients to ship practical, revenue-impacting features in fast-moving environments.",
   achievements: [
